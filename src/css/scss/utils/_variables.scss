@@ -1,0 +1,57 @@
+// ------------------------------------------------------------------
+// COLOURS
+// ------------------------------------------------------------------
+$white: #fff;
+$black: #000;
+$success: #62b51f;
+$warning: #e4be4c;
+$error: #c82727;
+$info: #5bc0de;
+
+$yellow-alpha: #CCAB3F;
+$green-alpha: #738360;
+$red-alpha: #BF4627;
+$pink-alpha: #E3B79F;
+
+// $facebook: #3b5998;
+// $twitter: #55acee;
+// $googleplus: #dd4b39;
+// $youtube: #bb0000;
+// $linkedin: #007bb5;
+// $instagram: #125688;
+// $pinterest: #cb2027;
+
+// ------------------------------------------------------------------
+// FONTS
+// ------------------------------------------------------------------
+$sans: "Maax", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "Fatface", Georgia, Times, "Times New Roman", serif;
+
+$reg: "Maax-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$med: "Maax-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$line-height: 1.5;
+
+$light: 300;
+$normal: 400;
+$semi: 600;
+$bold: 700;
+
+$text-size: 16px;
+$text-color: #444;
+
+$link-color: red;
+$link-hover-color: darken($link-color, 25%);
+
+// ------------------------------------------------------------------
+// DEFAULT TEMPLATE OPTIONS
+// ------------------------------------------------------------------
+$body-color: $white;
+$font-family: $sans;
+
+// ------------------------------------------------------------------
+// FORMS
+// ------------------------------------------------------------------
+$input-bkg: $white;
+$input-border: lighten($black, 90%);
+$input-focus: lighten($black, 95%);
