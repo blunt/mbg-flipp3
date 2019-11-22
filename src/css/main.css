@@ -5,6 +5,12 @@
   src: url("../fonts/maax-webfont.woff2") format("woff2"), url("../fonts/maax-webfont.woff") format("woff"); }
 
 @font-face {
+  font-family: 'Maax-Medium';
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/maax-medium-webfont.woff2") format("woff2"), url("../fonts/maax-medium-webfont.woff") format("woff"); }
+
+@font-face {
   font-family: 'Butler';
   font-weight: 400;
   font-display: swap;
@@ -38,8 +44,11 @@
             transform: rotateY(-180deg); } }
 
 .toggleFlip__inner a {
-  color: #fff;
+  color: #222;
   text-decoration: underline; }
+  @media (min-width: 768px) {
+    .toggleFlip__inner a {
+      color: #fff; } }
   .toggleFlip__inner a:hover {
     opacity: 0.8; }
 
@@ -62,7 +71,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px;
-  color: white; }
+  color: #222; }
   @media (min-width: 768px) {
     .toggleFlip__inner__back {
       -webkit-backface-visibility: hidden;
@@ -72,16 +81,17 @@
       left: 0;
       padding: 40px 90px 40px 40px;
       -webkit-transform: rotateY(-180deg);
-              transform: rotateY(-180deg); } }
-  .toggleFlip--pink .toggleFlip__inner__back {
-    background: #E3B79F; }
-  .toggleFlip--green .toggleFlip__inner__back {
-    background: #738360; }
-  .toggleFlip--yellow .toggleFlip__inner__back {
-    background: #CCAB3F; }
+              transform: rotateY(-180deg);
+      color: white; }
+      .toggleFlip--pink .toggleFlip__inner__back {
+        background: #E3B79F; }
+      .toggleFlip--green .toggleFlip__inner__back {
+        background: #738360; }
+      .toggleFlip--yellow .toggleFlip__inner__back {
+        background: #CCAB3F; } }
   .toggleFlip__inner__back p {
     margin: 10px 0;
-    letter-spacing: 0.10px; }
+    letter-spacing: 0.3px; }
     .toggleFlip__inner__back p:last-child {
       margin-bottom: 0; }
 
@@ -95,47 +105,35 @@
   -webkit-transform: translate(50%, -50%);
       -ms-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  width: 140px;
-  height: 140px;
-  line-height: 140px;
-  background: green;
+  width: 135px;
+  height: 135px;
+  line-height: 135px;
   text-align: center;
-  font-weight: 700;
+  font-family: 'Maax-Medium';
+  font-size: 19px;
   border-radius: 999px;
-  color: rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset -3px -15px 45px rgba(0, 0, 0, 0.25), 1px 5px 10px -4px rgba(0, 0, 0, 0.25);
-          box-shadow: inset -3px -15px 45px rgba(0, 0, 0, 0.25), 1px 5px 10px -4px rgba(0, 0, 0, 0.25);
-  -webkit-transition: 0.05s ease-out;
-  -o-transition: 0.05s ease-out;
-  transition: 0.05s ease-out;
+  border: 3px solid #4a4a4a;
+  background: #ECE1BC;
+  -webkit-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
   -webkit-transform-origin: center center;
       -ms-transform-origin: center center;
           transform-origin: center center; }
   @media (min-width: 768px) {
     .toggleFlip__button {
       display: block; } }
-  .toggleFlip--pink .toggleFlip__button {
-    background: #BF4627; }
-  .toggleFlip--green .toggleFlip__button {
-    background: #E3B79F; }
-  .toggleFlip--yellow .toggleFlip__button {
-    background: #738360; }
 
 .toggleFlip__button:active {
-  color: rgba(0, 0, 0, 0.4);
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
-  -webkit-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.55), inset -1px -1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.55), inset -1px -1px 2px rgba(0, 0, 0, 0.15);
-  -webkit-transform: translate(50%, -50%) scale(0.98);
-      -ms-transform: translate(50%, -50%) scale(0.98);
-          transform: translate(50%, -50%) scale(0.98); }
+  background: #fff; }
 
 .toggleFlip__inner__back__heading {
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: 0.15px;
   margin-bottom: 10px;
-  font-family: 'Butler'; }
+  font-family: 'Butler';
+  font-size: 36px;
+  line-height: 1.18;
+  letter-spacing: 0.4px; }
   @media (min-width: 768px) {
     .toggleFlip__inner__back__heading {
-      font-size: 30px; } }
+      font-size: 50px;
+      letter-spacing: 0.6px; } }
