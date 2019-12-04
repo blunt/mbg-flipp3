@@ -25,30 +25,29 @@
 .toggleFlip {
     font-family: 'Maax-Regular';
     max-width: 850px;
-    margin: 0 auto;
-    @include breakpoint (tablet-wide) {
+    @include breakpoint (desktop) {
         perspective: 2000px;
         background: $white;
-        margin: 40px auto;
+        margin: 40px 0;
     }
 }
 
 .toggleFlip__inner {
-     @include breakpoint (tablet-wide) {
+     @include breakpoint (desktop) {
         transform-style: preserve-3d;
         transition: transform 0.5s;
         position: relative;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     }
     &.flipped {
-        @include breakpoint (tablet-wide) {
+        @include breakpoint (desktop) {
             transform: rotateY(-180deg);
         }
     }
     a {
         color: #222;
         text-decoration: underline;
-        @include breakpoint (tablet-wide) {
+        @include breakpoint (desktop) {
             color: $white;
         }
         &:hover {
@@ -70,7 +69,7 @@
     justify-content: center;
     padding: 40px;
     color: #222;
-    @include breakpoint (tablet-wide) {
+    @include breakpoint (desktop) {
         backface-visibility: hidden;
         position: absolute;
         top: 0;
@@ -118,7 +117,7 @@
     color: #4a4a4a;
     transition: 0.15s ease-out;
     transform-origin: center center;
-    @include breakpoint (tablet-wide) {
+    @include breakpoint (desktop) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -135,7 +134,7 @@
     font-size: 36px;
     line-height: 1.18;
     letter-spacing: 0.4px;
-    @include breakpoint (tablet-wide) {
+    @include breakpoint (desktop) {
         font-size: 50px;
         letter-spacing: 0.6px;
     }
