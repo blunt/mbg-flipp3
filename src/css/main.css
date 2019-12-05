@@ -24,7 +24,7 @@
       -webkit-perspective: 2000px;
               perspective: 2000px;
       background: #fff;
-      margin: 40px 0; } }
+      margin: 40px auto; } }
 
 @media (min-width: 1280px) {
   .toggleFlip__inner {

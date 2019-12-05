@@ -28,7 +28,7 @@
     @include breakpoint (desktop) {
         perspective: 2000px;
         background: $white;
-        margin: 40px 0;
+        margin: 40px auto;
     }
 }
 
