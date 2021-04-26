@@ -18,40 +18,31 @@
 
 .toggleFlip {
   font-family: 'Maax-Regular';
-  max-width: 850px; }
-  @media (min-width: 1280px) {
-    .toggleFlip {
-      -webkit-perspective: 2000px;
-              perspective: 2000px;
-      background: #fff;
-      margin: 40px auto; } }
+  max-width: 850px;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+  background: #fff;
+  margin: 40px auto; }
 
-@media (min-width: 1280px) {
-  .toggleFlip__inner {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-    position: relative;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); } }
-
-@media (min-width: 1280px) {
+.toggleFlip__inner {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
   .toggleFlip__inner.flipped {
     -webkit-transform: rotateY(-180deg);
-            transform: rotateY(-180deg); } }
-
-.toggleFlip__inner a {
-  color: #222;
-  text-decoration: underline; }
-  @media (min-width: 1280px) {
-    .toggleFlip__inner a {
-      color: #fff; } }
-  .toggleFlip__inner a:hover {
-    opacity: 0.8; }
+            transform: rotateY(-180deg); }
+  .toggleFlip__inner a {
+    text-decoration: underline;
+    color: #fff; }
+    .toggleFlip__inner a:hover {
+      opacity: 0.8; }
 
 .toggleFlip__inner__front {
   -webkit-backface-visibility: hidden;
@@ -71,23 +62,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #222; }
-  @media (min-width: 1280px) {
-    .toggleFlip__inner__back {
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-      -webkit-transform: rotateY(-180deg);
-              transform: rotateY(-180deg);
-      color: white; }
-      .toggleFlip--pink .toggleFlip__inner__back {
-        background: #BF4627; }
-      .toggleFlip--green .toggleFlip__inner__back {
-        background: #738360; }
-      .toggleFlip--yellow .toggleFlip__inner__back {
-        background: #CCAB3F; } }
+  color: #222;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  color: white; }
+  .toggleFlip--pink .toggleFlip__inner__back {
+    background: #BF4627; }
+  .toggleFlip--green .toggleFlip__inner__back {
+    background: #738360; }
+  .toggleFlip--yellow .toggleFlip__inner__back {
+    background: #CCAB3F; }
   .toggleFlip__inner__back p {
     margin: 10px 0;
     letter-spacing: 0.3px; }
@@ -95,17 +84,13 @@
       margin-bottom: 0; }
 
 .toggleFlip__button {
-  display: none;
   cursor: pointer;
   z-index: 100;
   position: absolute;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translate(50%, -50%);
-      -ms-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  width: 90px;
-  height: 90px;
+  bottom: -30px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   font-family: 'Maax-Medium';
   font-size: 14px;
@@ -116,18 +101,25 @@
   transition: 0.15s ease-out;
   -webkit-transform-origin: center center;
       -ms-transform-origin: center center;
-          transform-origin: center center; }
+          transform-origin: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media (min-width: 1280px) {
     .toggleFlip__button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      top: 50%;
+      right: 0;
+      -webkit-transform: translate(50%, -50%);
+          -ms-transform: translate(50%, -50%);
+              transform: translate(50%, -50%);
+      width: 90px;
+      height: 90px; } }
 
 .toggleFlip--blue .toggleFlip__button {
   background: url(../images/click-button/CascadianFarms-clicktoflip-button1.png) no-repeat center center;
