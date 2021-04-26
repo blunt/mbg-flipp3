@@ -89,8 +89,8 @@
     cursor: pointer;
     z-index: 100;
     position: absolute;
-    bottom: -30px;
-    right: 10px;
+    bottom: -40px;
+    left: 10px;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -106,6 +106,7 @@
     @include breakpoint (desktop) {
         top: 50%;
         right: 0;
+        left:inherit;
         transform: translate(50%, -50%);
         width: 90px;
         height: 90px;

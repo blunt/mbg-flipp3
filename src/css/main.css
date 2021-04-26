@@ -87,8 +87,8 @@
   cursor: pointer;
   z-index: 100;
   position: absolute;
-  bottom: -30px;
-  right: 10px;
+  bottom: -40px;
+  left: 10px;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -115,6 +115,7 @@
     .toggleFlip__button {
       top: 50%;
       right: 0;
+      left: inherit;
       -webkit-transform: translate(50%, -50%);
           -ms-transform: translate(50%, -50%);
               transform: translate(50%, -50%);
