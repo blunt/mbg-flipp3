@@ -16,13 +16,31 @@
   font-display: swap;
   src: url("../fonts/butler.woff2") format("woff2"), url("../fonts/butler.woff") format("woff"); }
 
+.toggleFlip__wrapper {
+  max-width: 1168px;
+  margin: 120px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .toggleFlip {
   font-family: 'Maax-Regular';
-  max-width: 850px;
+  width: 100%;
   -webkit-perspective: 2000px;
           perspective: 2000px;
   background: #fff;
-  margin: 40px auto; }
+  margin-bottom: 120px; }
+  @media (min-width: 1280px) {
+    .toggleFlip {
+      width: 50%; } }
+
+.toggleFlip:nth-child(odd) {
+  padding-right: 10px; }
+
+.toggleFlip:nth-child(even) {
+  padding-left: 10px; }
 
 .toggleFlip__inner {
   -webkit-transform-style: preserve-3d;
@@ -87,10 +105,10 @@
   cursor: pointer;
   z-index: 100;
   position: absolute;
-  bottom: -40px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
   font-family: 'Maax-Medium';
   font-size: 14px;
@@ -110,44 +128,37 @@
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  @media (min-width: 1280px) {
-    .toggleFlip__button {
-      top: 50%;
-      right: 0;
-      left: inherit;
-      -webkit-transform: translate(50%, -50%);
-          -ms-transform: translate(50%, -50%);
-              transform: translate(50%, -50%);
-      width: 90px;
-      height: 90px; } }
+          justify-content: center;
+  width: 136px;
+  height: 136px;
+  top: -68px; }
 
 .toggleFlip--blue .toggleFlip__button {
-  background: url(../images/click-button/CascadianFarms-clicktoflip-button1.png) no-repeat center center;
+  background: url(../images/click-button/illo1-click.png) no-repeat center center;
   background-size: cover; }
   .toggleFlip--blue .toggleFlip__button:active {
-    background: url(../images/click-button/CascadianFarms-clicktoflip-button2.png) no-repeat center center;
+    background: url(../images/click-button/illo1-click.png) no-repeat center center;
     background-size: cover; }
 
 .toggleFlip--dark-blue .toggleFlip__button {
-  background: url(../images/click-button/Larabar-clicktoflip-button1.png) no-repeat center center;
+  background: url(../images/click-button/illo2-click.png) no-repeat center center;
   background-size: cover; }
   .toggleFlip--dark-blue .toggleFlip__button:active {
-    background: url(../images/click-button/Larabar-clicktoflip-button2.png) no-repeat center center;
+    background: url(../images/click-button/illo2-click.png) no-repeat center center;
     background-size: cover; }
 
 .toggleFlip--green .toggleFlip__button {
-  background: url(../images/click-button/AnniesOrganic-clicktoflip-button1.png) no-repeat center center;
+  background: url(../images/click-button/illo3-click.png) no-repeat center center;
   background-size: cover; }
   .toggleFlip--green .toggleFlip__button:active {
-    background: url(../images/click-button/AnniesOrganic-clicktoflip-button2.png) no-repeat center center;
+    background: url(../images/click-button/illo3-click.png) no-repeat center center;
     background-size: cover; }
 
 .toggleFlip--orange .toggleFlip__button {
-  background: url(../images/click-button/EPIC-clicktoflip-button1.png) no-repeat center center;
+  background: url(../images/click-button/illo4-click.png) no-repeat center center;
   background-size: cover; }
   .toggleFlip--orange .toggleFlip__button:active {
-    background: url(../images/click-button/EPIC-clicktoflip-button2.png) no-repeat center center;
+    background: url(../images/click-button/illo4-click.png) no-repeat center center;
     background-size: cover; }
 
 .toggleFlip__inner__back__heading {

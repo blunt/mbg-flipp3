@@ -22,12 +22,30 @@
         url('../fonts/butler.woff') format('woff');
 }
 
+.toggleFlip__wrapper {
+    max-width: 1168px;
+    margin: 120px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .toggleFlip {
     font-family: 'Maax-Regular';
-    max-width: 850px;
+    width: 100%;
     perspective: 2000px;
     background: $white;
-    margin: 40px auto;
+    margin-bottom: 120px;
+    @include breakpoint (desktop) {
+        width: 50%;
+    }
+}
+
+.toggleFlip:nth-child(odd) {
+    padding-right: 10px;
+}
+
+.toggleFlip:nth-child(even) {
+    padding-left: 10px;
 }
 
 .toggleFlip__inner {
@@ -89,10 +107,8 @@
     cursor: pointer;
     z-index: 100;
     position: absolute;
-    bottom: -40px;
-    left: 10px;
-    width: 60px;
-    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     font-family: 'Maax-Medium';
     font-size: 14px;
@@ -103,49 +119,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include breakpoint (desktop) {
-        top: 50%;
-        right: 0;
-        left:inherit;
-        transform: translate(50%, -50%);
-        width: 90px;
-        height: 90px;
-    }
+    width: 136px;
+    height: 136px;
+    top: -68px;
 }
 
 
 .toggleFlip--blue .toggleFlip__button {
-    background: url(../images/click-button/CascadianFarms-clicktoflip-button1.png) no-repeat center center;
+    background: url(../images/click-button/illo1-click.png) no-repeat center center;
     background-size: cover;
     &:active {
-        background: url(../images/click-button/CascadianFarms-clicktoflip-button2.png) no-repeat center center;
+        background: url(../images/click-button/illo1-click.png) no-repeat center center;
         background-size: cover;
     }
 }
 
 .toggleFlip--dark-blue .toggleFlip__button {
-    background: url(../images/click-button/Larabar-clicktoflip-button1.png) no-repeat center center;
+    background: url(../images/click-button/illo2-click.png) no-repeat center center;
     background-size: cover;
     &:active {
-        background: url(../images/click-button/Larabar-clicktoflip-button2.png) no-repeat center center;
+        background: url(../images/click-button/illo2-click.png) no-repeat center center;
         background-size: cover;
     }
 }
 
 .toggleFlip--green .toggleFlip__button {
-    background: url(../images/click-button/AnniesOrganic-clicktoflip-button1.png) no-repeat center center;
+    background: url(../images/click-button/illo3-click.png) no-repeat center center;
     background-size: cover;
     &:active {
-        background: url(../images/click-button/AnniesOrganic-clicktoflip-button2.png) no-repeat center center;
+        background: url(../images/click-button/illo3-click.png) no-repeat center center;
         background-size: cover;
     }
 }
 
 .toggleFlip--orange .toggleFlip__button {
-    background: url(../images/click-button/EPIC-clicktoflip-button1.png) no-repeat center center;
+    background: url(../images/click-button/illo4-click.png) no-repeat center center;
     background-size: cover;
     &:active {
-        background: url(../images/click-button/EPIC-clicktoflip-button2.png) no-repeat center center;
+        background: url(../images/click-button/illo4-click.png) no-repeat center center;
         background-size: cover;
     }
 }
