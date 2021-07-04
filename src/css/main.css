@@ -36,11 +36,11 @@
     .toggleFlip {
       width: 50%; } }
 
-.toggleFlip:nth-child(odd) {
-  padding-right: 10px; }
-
-.toggleFlip:nth-child(even) {
-  padding-left: 10px; }
+@media (min-width: 1280px) {
+  .toggleFlip:nth-child(odd) {
+    padding-right: 10px; }
+  .toggleFlip:nth-child(even) {
+    padding-left: 10px; } }
 
 .toggleFlip__inner {
   -webkit-transform-style: preserve-3d;
@@ -66,6 +66,8 @@
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: relative; }
+  .toggleFlip__inner__front img {
+    width: 100%; }
 
 .toggleFlip__inner__back {
   width: 100%;

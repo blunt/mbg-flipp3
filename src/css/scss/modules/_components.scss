@@ -40,12 +40,14 @@
     }
 }
 
-.toggleFlip:nth-child(odd) {
-    padding-right: 10px;
-}
+@include breakpoint (desktop) {
+    .toggleFlip:nth-child(odd) {
+        padding-right: 10px;
+    }
 
-.toggleFlip:nth-child(even) {
-    padding-left: 10px;
+    .toggleFlip:nth-child(even) {
+        padding-left: 10px;
+    }
 }
 
 .toggleFlip__inner {
@@ -68,6 +70,9 @@
 .toggleFlip__inner__front {
     backface-visibility: hidden;
     position: relative;
+    img {
+        width: 100%;
+    }
 }
 
 .toggleFlip__inner__back {
